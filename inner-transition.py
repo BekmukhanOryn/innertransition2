@@ -7,7 +7,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
 
 import os
-TOKEN = os.getenv("8323313698:AAHGpCJr_oc-fkMU4sYHd5tKM31VrjE0-AE")                                               # вставляй свой токен
+TOKEN = os.getenv("TOKEN")                                               # вставляй свой токен
 
 class TestState(StatesGroup):
     question = State()
@@ -127,3 +127,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
