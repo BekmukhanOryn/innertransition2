@@ -6,7 +6,8 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.storage.memory import MemoryStorage
 
-TOKEN = "8323313698:AAHGpCJr_oc-fkMU4sYHd5tKM31VrjE0-AE"  # вставляй свой токен
+import os
+TOKEN = os.getenv("8323313698:AAHGpCJr_oc-fkMU4sYHd5tKM31VrjE0-AE")                                               # вставляй свой токен
 
 class TestState(StatesGroup):
     question = State()
@@ -124,4 +125,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
